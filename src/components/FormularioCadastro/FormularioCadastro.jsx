@@ -13,7 +13,6 @@ class FormularioCadastro extends Component {
 
   componentDidMount(){
     this.props.categorias.inscrever( this._novasCategorias);
-    
   }
 
   componentWillUnmount(){
@@ -74,5 +73,6 @@ class FormularioCadastro extends Component {
     );
   }
 }
+
 
 export default FormularioCadastro;

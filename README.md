@@ -2,6 +2,7 @@
 
 ## Projeto
 * Projeto de react em desenvolvimento...
+* Testando...
 
 ## Desenvolvimento
 * Uso de Javascript, CSS e HTML.

@@ -11,7 +11,6 @@ class App extends Component {
     super();
     this.categorias = new Categorias();
     this.notas = new ArrayDeNotas();
-    
   }
 
   render() {
@@ -36,5 +35,4 @@ class App extends Component {
   }
 }
 
-//new ListaDeNotas({notas:this.notas})
 export default App;

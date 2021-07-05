@@ -5,3 +5,5 @@ const AnnotationDataSchema = new mongoose.Schema({
     notes: String,
     priority: Boolean,
 });
+
+module.exports = mongoose.model('Annotations', AnnotationDataSchema);

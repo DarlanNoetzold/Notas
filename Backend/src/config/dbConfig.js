@@ -1,4 +1,4 @@
-const mongoose = require()
+const mongoose = require('mongoose')
 
 const dbConfig = 'mongodb+srv://user:user@cluster0.51ibj.mongodb.net/annotations?retryWrites=true&w=majority';
 

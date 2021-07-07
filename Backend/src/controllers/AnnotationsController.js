@@ -3,18 +3,17 @@ const Annotations = require('../models/AnnotationData');
 
 module.exports = {
 
-    read(request, response){
-        return response.json({
-            sucess: true,
-        })
+    async read(request, response){
+        const annotationList = await Annotations.find();
+
+        return response.json(annotationList);
+
     },
 
     create(request, responde){
+        console.log(request.body);
         const {title, notes, priority} = request.body;
-
-        console.log(title);
-        console.log(notes);
-        console.log(priority);
+        
     }
     
 }

@@ -10,10 +10,20 @@ module.exports = {
 
     },
 
-    create(request, responde){
-        console.log(request.body);
+    async create(request, responde){
         const {title, notes, priority} = request.body;
         
+        if(!notes || !title){
+            return response.status(400).json({error: "Necess?rio um t?tulo/anota??o!"});
+        }
+
+        const annotationCreated = await Annotations.create({
+            title,
+            notes,
+            priority
+        });
+
+        return response.json(annotationCreated);
     }
     
 }

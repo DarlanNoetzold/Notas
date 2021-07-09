@@ -24,6 +24,11 @@ module.exports = {
         });
 
         return response.json(annotationCreated);
-    }
+    },
     
+    delete(request, response){
+        const {id} = request.params;
+
+        console.log(id);
+    }
 }

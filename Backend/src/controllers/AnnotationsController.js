@@ -26,9 +26,15 @@ module.exports = {
         return response.json(annotationCreated);
     },
     
-    delete(request, response){
+    async delete(request, response){
         const { id } = request.params;
 
-        console.log(id);
+        const annotationDeleted = await Annotations.findOneAndDelete({ _id: id });
+
+        if(annotationDeleted){
+            return response.json(annotationDeleted);
+        }
+
+        return response.status(401).json({ error: 'N?o foi poss?vel encontrar o registro para deletar!' });
     }
 }

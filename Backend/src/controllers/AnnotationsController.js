@@ -27,7 +27,7 @@ module.exports = {
     },
     
     delete(request, response){
-        const {id} = request.params;
+        const { id } = request.params;
 
         console.log(id);
     }

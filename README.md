@@ -8,5 +8,5 @@
 * Uso de Javascript, CSS e HTML.
 * Projeto baseado principalmente com React, pois estou conhecendo esta ferramenta.
 * Usando node.js.
-* Vou utilizar MongoDB.
+* Estou utilizando MongoDB.
 * Em desenvolvimento..

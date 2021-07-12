@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, bosy, #root{
+    height: 100%;
+}
+
+body{
+    background: #E4E7EF;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea{
+    font-family: Roboto, sans-serif;
+}

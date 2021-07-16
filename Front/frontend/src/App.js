@@ -24,7 +24,18 @@ function App() {
         </form>
       </aside>
       <main>
+        <ul>
+          <li className="notepad-info">
+            <div>
+              <strong>Fazer compras</strong>
+              <div>
+                x
+              </div>
+            </div>
 
+            <textarea>sdasd ifhuas od ghfsdof fgh aods hgop?ashgp udeshgpu dhfg</textarea>
+          </li>
+        </ul>
       </main>
     </div>
   );

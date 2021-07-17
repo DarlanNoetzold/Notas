@@ -1,9 +1,10 @@
 import React from 'react';
-import './global.css';
-import './sidebar.css';
-import './app.css';
-import './main.css';
+import './global.css'
+import './sidebar.css'
+import './app.css'
+import './main.css'
 
+import Notes from './Components/Notes'
 
 function App() {
   return (
@@ -27,41 +28,7 @@ function App() {
       </aside>
       <main>
         <ul>
-          <li className="notepad-info">
-            <div>
-              <strong>Fazer compras</strong>
-              <div>
-                x
-              </div>
-            </div>
-
-            <textarea>sdasd ifhuas od ghfsdof fgh aods hgop?ashgp udeshgpu dhfg</textarea>
-            <span>!</span>
-          </li>
-
-          <li className="notepad-info">
-            <div>
-              <strong>Fazer compras</strong>
-              <div>
-                x
-              </div>
-            </div>
-
-            <textarea>sdasd ifhuas od ghfsdof fgh aods hgop?ashgp udeshgpu dhfg</textarea>
-            <span>!</span>
-          </li>
-
-          <li className="notepad-info">
-            <div>
-              <strong>Fazer compras</strong>
-              <div>
-                x
-              </div>
-            </div>
-
-            <textarea>sdasd ifhuas od ghfsdof fgh aods hgop?ashgp udeshgpu dhfg</textarea>
-            <span>!</span>
-          </li>
+          <Notes />
         </ul>
       </main>
     </div>

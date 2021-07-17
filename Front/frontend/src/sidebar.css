@@ -8,6 +8,12 @@ aside{
     position: fixed; 
 }
 
+@media (max-wdth: 1000px){
+    aside{
+        position: relative;
+    }
+}
+
 aside strong{
     font-size: 20px;
     text-align: center;

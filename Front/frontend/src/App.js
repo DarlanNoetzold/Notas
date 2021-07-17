@@ -36,6 +36,31 @@ function App() {
             </div>
 
             <textarea>sdasd ifhuas od ghfsdof fgh aods hgop?ashgp udeshgpu dhfg</textarea>
+            <span>!</span>
+          </li>
+
+          <li className="notepad-info">
+            <div>
+              <strong>Fazer compras</strong>
+              <div>
+                x
+              </div>
+            </div>
+
+            <textarea>sdasd ifhuas od ghfsdof fgh aods hgop?ashgp udeshgpu dhfg</textarea>
+            <span>!</span>
+          </li>
+
+          <li className="notepad-info">
+            <div>
+              <strong>Fazer compras</strong>
+              <div>
+                x
+              </div>
+            </div>
+
+            <textarea>sdasd ifhuas od ghfsdof fgh aods hgop?ashgp udeshgpu dhfg</textarea>
+            <span>!</span>
           </li>
         </ul>
       </main>

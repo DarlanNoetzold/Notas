@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import api from './services/api'
 
@@ -10,8 +10,21 @@ import './main.css'
 import Notes from './Components/Notes'
 
 function App() {
+
   const [ title, setTitles ] = useState('')
   const [ notes, setNotes ] = useState('')
+  const [ allNotes, setAllNotes ] = useState([])
+
+  useEffect(() => {
+    async function getAllNotes(){
+      const response = await api.get('/annotations',);
+
+      setAllNotes(response.data)
+    }
+
+    getAllNotes()
+  }, [])
+
 
   async function handleSubmit(e){
     e.preventDefault();
@@ -26,6 +39,7 @@ function App() {
     setNotes('')
 
   }
+
 
   return (
     <div id="app">
@@ -56,7 +70,10 @@ function App() {
       </aside>
       <main>
         <ul>
-          <Notes />
+          {allNotes.map(data => (
+            <Notes data={data} />
+          ))}
+          
         </ul>
       </main>
     </div>

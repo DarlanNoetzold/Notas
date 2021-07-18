@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import api from './services/api'
+
 import './global.css'
 import './sidebar.css'
 import './app.css'
@@ -7,11 +10,21 @@ import './main.css'
 import Notes from './Components/Notes'
 
 function App() {
-  const [ title, setTitles] = useState('')
-  const [ notes, setNotes] = useState('')
+  const [ title, setTitles ] = useState('')
+  const [ notes, setNotes ] = useState('')
 
-  function handleSubmit(e){
+  async function handleSubmit(e){
     e.preventDefault();
+
+    const response = await api.post('/annotations', {
+      title,
+      notes,
+      priority: false
+    })
+
+    setTitles('')
+    setNotes('')
+
   }
 
   return (
@@ -25,6 +38,7 @@ function App() {
             <input
               required
               value={title}
+              onChange={e => setTitles(e.target.value)}
             />
           </div>
 
@@ -33,6 +47,7 @@ function App() {
             <textarea
               required
               value={notes}
+              onChange={e => setNotes(e.target.value)}
             />
           </div>
 

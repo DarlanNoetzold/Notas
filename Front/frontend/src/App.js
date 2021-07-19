@@ -38,8 +38,21 @@ function App() {
     setTitles('')
     setNotes('')
 
+    setAllNotes([ ...allNotes, response.data ])
+
   }
 
+  useEffect(() => {
+    function enableSubmitButton(){
+      let btn = document.getElementById('btn_submit')
+      btn.style.background = "#FFD3CA"
+      if(title && notes){
+        btn.style.background = "#EB8F7A"
+      }
+    }
+    enableSubmitButton()
+
+  }, [title, notes])
 
   return (
     <div id="app">
@@ -48,7 +61,7 @@ function App() {
         <form onSubmit={handleSubmit}>
 
           <div className="input-block">
-            <label htmlFor="title">Titulo da Anota??o</label>
+            <label htmlFor="title">Titulo da Anotacao</label>
             <input
               required
               value={title}
@@ -57,7 +70,7 @@ function App() {
           </div>
 
           <div className="input-block">
-            <label htmlFor="nota">Anota??o</label>
+            <label htmlFor="nota">Anotacao</label>
             <textarea
               required
               value={notes}
@@ -65,7 +78,7 @@ function App() {
             />
           </div>
 
-          <button type="submit">Salvar</button>
+          <button id="btn_submit" type="submit">Salvar</button>
         </form>
       </aside>
       <main>

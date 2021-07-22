@@ -65,6 +65,7 @@ function App() {
             <label htmlFor="title">Titulo da Anotacao</label>
             <input
               required
+              maxLength="30"
               value={title}
               onChange={e => setTitles(e.target.value)}
             />

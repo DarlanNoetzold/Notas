@@ -5,7 +5,7 @@ import './style.css'
 import './style-priority.css'
 import api from '../../services/api'
 
-function Notes({ data }){
+function Notes({ data, handleDelete }){
     const [ changedNote, setChangedNote ] = useState('');
 
     async function handleSave(e, notes){
@@ -35,7 +35,9 @@ function Notes({ data }){
             <div>
               <strong>{ data.title }</strong>
               <div>
-                <AiTwotoneDelete size="20" />
+                <AiTwotoneDelete size="20"
+                  onClick={() => handleDelete(data._id)}
+                />
               </div>
             </div>
 

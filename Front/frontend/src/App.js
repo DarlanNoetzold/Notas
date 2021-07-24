@@ -11,7 +11,7 @@ import Notes from './Components/Notes'
 import RadioButton from './Components/RadioButton';
 
 function App() {
-
+  const [ selectedValue, setSelectedValue ] = useState('all')
   const [ title, setTitles ] = useState('')
   const [ notes, setNotes ] = useState('')
   const [ allNotes, setAllNotes ] = useState([])

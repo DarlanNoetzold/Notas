@@ -18,15 +18,21 @@ function RadioButton(){
     return(
       <div className="radioOptions">
         <div>
-            <CustomRadio/>
+            <CustomRadio
+              checked={selectedValue == 'all'}
+            />
             <span>Todos</span>
         </div>
         <div>
-            <CustomRadio/>
+            <CustomRadio
+              checked={selectedValue == 'true'}
+            />
             <span>Prioridade</span>
         </div>
         <div>
-            <CustomRadio/>
+            <CustomRadio
+              checked={selectedValue == 'false'}
+            />
             <span>Normal</span>
         </div>
       </div>

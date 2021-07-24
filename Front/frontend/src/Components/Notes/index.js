@@ -5,7 +5,7 @@ import './style.css'
 import './style-priority.css'
 import api from '../../services/api'
 
-function Notes({ data, handleDelete }){
+function Notes({ data, handleDelete, handleChangePriority }){
     const [ changedNote, setChangedNote ] = useState('');
 
     async function handleSave(e, notes){
@@ -48,7 +48,9 @@ function Notes({ data, handleDelete }){
               onBlur={e => handleSave(e.target, data.notes)}
             />
             <span>
-              <AiOutlineExclamationCircle size="20" />
+              <AiOutlineExclamationCircle size="20" 
+                onClick={e => handleChangePriority(data._id)}
+              />
             </span>
           </li>
         </>

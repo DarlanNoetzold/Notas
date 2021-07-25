@@ -37,7 +37,9 @@ function App() {
   async function handleChangePriority(id){
     const note = await api.post(`/priorities/${id}`);
 
-    if(note){
+    if(note && selectedValue != 'all'){
+      loadNotes(selectedValue);
+    }else if(note){
       getAllNotes();
     }
   }

@@ -60,7 +60,6 @@ function App() {
     }else{
       getAllNotes();
     }
-
   }
 
 
@@ -119,7 +118,10 @@ function App() {
 
           <button id="btn_submit" type="submit">Salvar</button>
         </form>
-        <RadioButton />
+        <RadioButton 
+          selectedValue={selectedValue}
+          handleChange={handleChange}
+        />
       </aside>
       <main>
         <ul>

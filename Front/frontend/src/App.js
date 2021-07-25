@@ -42,6 +42,28 @@ function App() {
     }
   }
 
+
+  async function loadNotes(option){
+    const params = { priority: option };
+    const response = await api.post(`/priorities`, { params });
+
+    if(response){
+      setAllNotes(response.data);
+    }
+  }
+
+  async function handleChange(e){
+    setSelectedValue(e.value);
+
+    if(e.checked && e.value != 'all'){
+      loadNotes(e.value);
+    }else{
+      getAllNotes();
+    }
+
+  }
+
+
   async function handleSubmit(e){
     e.preventDefault();
 

@@ -1,8 +1,10 @@
 # Notas
 
 ## Projeto
-* Projeto de react em desenvolvimento...
-* Testando...
+* Projeto de um caderno de notas.
+* Tem funções de CRUD completas, adição, remoção e alteração.
+* É possível colocar uma nota como prioridade.
+* Existem filtros para olhar apenas nota com prioridade, notas normais e todas.
 
 ## Desenvolvimento
 * Uso de Javascript, CSS e HTML.

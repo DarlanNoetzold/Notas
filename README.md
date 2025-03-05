@@ -1,23 +1,22 @@
-# Notas
+# Notes
 
-## Projeto
-* Projeto de um caderno de notas.
-* Tem funções de CRUD completas, adição, remoção e alteração.
-* É possível colocar uma nota como prioridade.
-* Existem filtros para olhar apenas nota com prioridade, notas normais e todas.
+## Project
+* Notebook project.
+* Has full CRUD functions, adding, removing and changing.
+* It is possible to set a note as a priority.
+* There are filters to look only at notes with priority, normal notes and all notes.
 
-## Desenvolvimento
-* Uso de Javascript, CSS e HTML.
-* Projeto baseado principalmente com React, pois estou conhecendo esta ferramenta.
-* Usei node.js para o Bakcend.
-* Estou utilizando MongoDB.
+## Development
+* Use of Javascript, CSS and HTML.
+* Project based mainly on React, as I am getting to know this tool.
+* I used node.js for the background.
+* I am using MongoDB.
 
 ---
 
-## Documentação
-### Página com 3 notas salvas, 1 nota com prioridade e 2 normais:
+## Documentation
+### Page with 3 saved notes, 1 priority note and 2 normal ones:
 ![image](https://user-images.githubusercontent.com/41628589/126897497-b4e7eccb-0f0d-4d49-9dd5-ac8fe0059bc6.png)
-
 
 ---
 
